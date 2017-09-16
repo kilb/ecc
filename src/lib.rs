@@ -1,8 +1,11 @@
 #![crate_name = "ecc"]
 #![crate_type = "lib"]
-#![experimental]
+
+#![feature(test)]
+extern crate test;
 
 extern crate num;
+extern crate rand;
 
 pub mod fields;
 pub mod curves;
